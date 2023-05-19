@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+@import "base.css";
+@import "helpers.css";
+
+/* Componentes:*/
+@import "header.css";
+@import "hero.css";
+@import "footer.css";
+@import "search.css";
+
+
+/*
+* popular
+* ==========================================================
+*/
+.popular__grid {
+  display: grid;
+  grid-auto-rows: auto;
+  gap: 10px;
+}
+
+.article--is-first .article__text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .popular__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .popular__grid-item:nth-child(1) {
+    grid-column: 1/-1;
+  }
+
+  /* Solucion del primer elemento de popular en el article se vuelve flex
+  y la imagen ocupa todo el lado derecho */
+
+  /* .popular__grid-item:nth-child(1) .article {
+    display: grid;
+  }
+
+  .popular__grid-item:nth-child(1) .article .article__image {
+    grid-column: 2/3;
+    grid-row: 1/-1;
+  } */
+
+  .article--is-first {
+    display: flex;
+    gap: 10px;
+    flex-direction: row-reverse;
+  }
+
+  .article--is-first .article__image {
+    flex-grow: 1;
+    flex-basis: 60%;
+  }
+
+  .article--is-first .article__main {
+    flex-grow: 1;
+    flex-shrink: 10; /* Para que decrezca mas que __image*/
+  }
+  .article--is-first .article__title {
+    font-size: 36px;
+  }
+
+  .article--is-first .article__text {
+    -webkit-line-clamp: 6;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .article--is-first .article__text {
+    display: -webkit-box;
+    -webkit-line-clamp: 12;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+/*
+* article
+* ==========================================================
+*/
+.article__image-img {
+  width: 100%;
+}
+
+.article__title {
+  color: #1f3f68;
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.article__text {
+  font-size: 14px;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+
+.article__footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article__footer-author {
+  color: #1f3f68;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.article__footer-date {
+  font-family: "Arial";
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.article__footer-icon {
+  color: #356ead;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+}
+
+.popular__grid {
+  display: grid;
+  grid-auto-rows: auto;
+  gap: 10px;
+}
+
+.popular__title{
+  color: #356EAD;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+.see-popular-article h3{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  text-align: right;
+  color: #356EAD;
+  margin-top: 40px;
+  margin-bottom: 45px;
+  padding: 15px;
+  opacity: 0.8;
+}
+.article--is-second{
+  padding-bottom: 20px;
+}
+
+.article__texto{
+  font-size: 14px;
+  line-height: 26px;
+  flex-grow: inherit;
+}
+
+.imagen{
+  max-width: 375px;
+  max-height: 200px;
+  width: 100%;
+}
+
+.article--is-second .article__text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .popular__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .popular__grid-item:nth-child(1) {
+    grid-column: 1/-1;
+  }
+
+  .article--is-second {
+      display: flex;
+      gap: 10px;
+  }
+
+  .article--is-second .article__image {
+      flex-grow: 1;
+      flex-basis: 35%;
+  }
+
+  .article--is-second .article__main {
+      display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+      flex-grow: 1;
+      flex-shrink: 10;
+  }
+
+  .article--is-second .article__text {
+      -webkit-line-clamp: 6;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .article--is-second .article__text {
+      display: -webkit-box;
+      -webkit-line-clamp: 12;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+  }
+}
+
+.parte__text-arrow{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.text-arrow{
+  color: #356EAD;
+  font-family: 'Arial';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.arrow-left{
+  margin-right: 12px;
+}
+
+.arrow-right{
+  margin-left: 12px;
+}

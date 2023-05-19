@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Blog Page</title>
+</head>
+
+<body class="layout">
+    <header class="layout__header header">
+        <div class="header__logo">
+            <img src="/img/logo.png" alt="logo">
+        </div>
+        <nav class="header__nav">
+            <a href="" class="header__nav-item header__nav-item--active">Home</a>
+            <a href="" class="header__nav-item">Espectáculo</a>
+            <a href="" class="header__nav-item">Deportes</a>
+        </nav>
+    </header>
+
+    <section class="layout__hero">
+        <div class="hero">
+            <h1>Blog Noticias</h1>
+            <p>¡Descubre las últimas noticias y mantente informado en nuestro blog de noticias líder en la industria! Explora artículos exclusivos, análisis profundos y cobertura en tiempo real de los temas más relevantes. Desde política hasta tecnología, deportes y entretenimiento, nuestro blog es tu fuente confiable de información.¡No te pierdas ni un solo titular!</p>
+            <!-- TODO: Completar texto -->
+        </div>
+    </section>
+
+    <main class="layout__main">
+        <div class="container">
+            <div class="search">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path
+                        d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z"
+                        fill="currentColor"></path>
+                </svg>
+                <div>Buscar Articulo</div>
+            </div>
+
+            <section class="popular">
+                <h3 class="popular__title">POPULAR</h3>
+                <section class="popular__grid">
+                    <div class="popular__grid-item">
+                        <article class="article article--is-first">
+                            <div class="article__image">
+                                <img class="article__image-img" src="/img/new-1.png" alt="noticia4">
+                            </div>
+                            <div class="article__main">
+                                <h4 class="article__title">
+                                    El impacto de la tecnología en la educación: Una revolución en las aulas
+                                </h4>
+                                <p class="article__text">
+                                    Descubre cómo la tecnología ha transformado por completo el panorama educativo y ha
+                                     revolucionado la forma en que los estudiantes aprenden. En este artículo exploraremos
+                                     las diversas formas en que la tecnología ha impactado la educación, desde la introducción
+                                      de pizarras interactivas y dispositivos móviles en las aulas, hasta el acceso a recursos 
+                                     educativos en línea y plataformas de aprendizaje virtual. Sumérgete en este emocionante viaje
+                                     donde exploraremos cómo la tecnología está enriqueciendo la experiencia educativa, fomentando
+                                     la participación activa de los estudiantes y preparándolos para enfrentar los desafíos del 
+                                     siglo XXI. No te pierdas este análisis fascinante sobre el futuro de la educación impulsado 
+                                      por la tecnología.
+                                </p>
+                                <div class="article__footer">
+
+                                    <div class="article__footer-info">
+                                        <div class="article__footer-author">Samatha Leuthex</div>
+                                        <div class="article__footer-date">May 5, 3 min read</div>
+                                    </div>
+
+                                    <div class="article__footer-actions">
+                                        <div class="article__footer-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M5 2H19C19.5523 2 20 2.44772 20 3V22.1433C20 22.4194 19.7761 22.6434 19.5 22.6434C19.4061 22.6434 19.314 22.6168 19.2344 22.5669L12 18.0313L4.76559 22.5669C4.53163 22.7136 4.22306 22.6429 4.07637 22.4089C4.02647 22.3293 4 22.2373 4 22.1433V3C4 2.44772 4.44772 2 5 2Z">
+                                                </path>
+                                            </svg></div>
+                                        <div class="article__footer-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M13.5759 17.2714L8.46576 14.484C7.83312 15.112 6.96187 15.5 6 15.5C4.067 15.5 2.5 13.933 2.5 12C2.5 10.067 4.067 8.5 6 8.5C6.96181 8.5 7.83301 8.88796 8.46564 9.51593L13.5759 6.72855C13.5262 6.49354 13.5 6.24983 13.5 6C13.5 4.067 15.067 2.5 17 2.5C18.933 2.5 20.5 4.067 20.5 6C20.5 7.933 18.933 9.5 17 9.5C16.0381 9.5 15.1669 9.11201 14.5343 8.48399L9.42404 11.2713C9.47382 11.5064 9.5 11.7501 9.5 12C9.5 12.2498 9.47383 12.4935 9.42408 12.7285L14.5343 15.516C15.167 14.888 16.0382 14.5 17 14.5C18.933 14.5 20.5 16.067 20.5 18C20.5 19.933 18.933 21.5 17 21.5C15.067 21.5 13.5 19.933 13.5 18C13.5 17.7502 13.5262 17.5064 13.5759 17.2714Z">
+                                                </path>
+                                            </svg></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="popular__grid-item">
+                        <article class="article">
+                            <div class="article__image">
+                                <img class="article__image-img" src="/img/new-2.png" alt="noticia4">
+                            </div>
+                            <h4 class="article__title">
+                                Los beneficios de la meditación: Encuentra la calma interior
+                            </h4>
+                            <p class="article__text">
+                                Explora los numerosos beneficios de la meditación y descubre cómo esta práctica milenaria puede ayudarte a reducir el estrés, mejorar la concentración y encontrar la calma interior. 
+                            </p>
+                            <div class="article__footer">
+
+                                <div class="article__footer-info">
+                                    <div class="article__footer-author">Samatha Leuthex</div>
+                                    <div class="article__footer-date">May 5, 3 min read</div>
+                                </div>
+
+                                <div class="article__footer-actions">
+                                    <div class="article__footer-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M5 2H19C19.5523 2 20 2.44772 20 3V22.1433C20 22.4194 19.7761 22.6434 19.5 22.6434C19.4061 22.6434 19.314 22.6168 19.2344 22.5669L12 18.0313L4.76559 22.5669C4.53163 22.7136 4.22306 22.6429 4.07637 22.4089C4.02647 22.3293 4 22.2373 4 22.1433V3C4 2.44772 4.44772 2 5 2Z">
+                                            </path>
+                                        </svg></div>
+                                    <div class="article__footer-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M13.5759 17.2714L8.46576 14.484C7.83312 15.112 6.96187 15.5 6 15.5C4.067 15.5 2.5 13.933 2.5 12C2.5 10.067 4.067 8.5 6 8.5C6.96181 8.5 7.83301 8.88796 8.46564 9.51593L13.5759 6.72855C13.5262 6.49354 13.5 6.24983 13.5 6C13.5 4.067 15.067 2.5 17 2.5C18.933 2.5 20.5 4.067 20.5 6C20.5 7.933 18.933 9.5 17 9.5C16.0381 9.5 15.1669 9.11201 14.5343 8.48399L9.42404 11.2713C9.47382 11.5064 9.5 11.7501 9.5 12C9.5 12.2498 9.47383 12.4935 9.42408 12.7285L14.5343 15.516C15.167 14.888 16.0382 14.5 17 14.5C18.933 14.5 20.5 16.067 20.5 18C20.5 19.933 18.933 21.5 17 21.5C15.067 21.5 13.5 19.933 13.5 18C13.5 17.7502 13.5262 17.5064 13.5759 17.2714Z">
+                                            </path>
+                                        </svg></div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="popular__grid-item">
+                        <article class="article">
+                            <div class="article__image">
+                                <img class="article__image-img" src="/img/new-3.png" alt="noticia4">
+                            </div>
+                            <h4 class="article__title">
+                                Viajes económicos: Descubre el mundo sin romper el banco
+                            </h4>
+                            <p class="article__text">
+                                ¿Siempre has soñado con viajar pero te preocupa el costo? En este artículo, te presentamos consejos y trucos para viajar de manera económica sin comprometer la calidad de tu experiencia.
+                            </p>
+                            <div class="article__footer">
+
+                                <div class="article__footer-info">
+                                    <div class="article__footer-author">Samatha Leuthex</div>
+                                    <div class="article__footer-date">May 5, 3 min read</div>
+                                </div>
+
+                                <div class="article__footer-actions">
+                                    <div class="article__footer-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M5 2H19C19.5523 2 20 2.44772 20 3V22.1433C20 22.4194 19.7761 22.6434 19.5 22.6434C19.4061 22.6434 19.314 22.6168 19.2344 22.5669L12 18.0313L4.76559 22.5669C4.53163 22.7136 4.22306 22.6429 4.07637 22.4089C4.02647 22.3293 4 22.2373 4 22.1433V3C4 2.44772 4.44772 2 5 2Z">
+                                            </path>
+                                        </svg></div>
+                                    <div class="article__footer-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M13.5759 17.2714L8.46576 14.484C7.83312 15.112 6.96187 15.5 6 15.5C4.067 15.5 2.5 13.933 2.5 12C2.5 10.067 4.067 8.5 6 8.5C6.96181 8.5 7.83301 8.88796 8.46564 9.51593L13.5759 6.72855C13.5262 6.49354 13.5 6.24983 13.5 6C13.5 4.067 15.067 2.5 17 2.5C18.933 2.5 20.5 4.067 20.5 6C20.5 7.933 18.933 9.5 17 9.5C16.0381 9.5 15.1669 9.11201 14.5343 8.48399L9.42404 11.2713C9.47382 11.5064 9.5 11.7501 9.5 12C9.5 12.2498 9.47383 12.4935 9.42408 12.7285L14.5343 15.516C15.167 14.888 16.0382 14.5 17 14.5C18.933 14.5 20.5 16.067 20.5 18C20.5 19.933 18.933 21.5 17 21.5C15.067 21.5 13.5 19.933 13.5 18C13.5 17.7502 13.5262 17.5064 13.5759 17.2714Z">
+                                            </path>
+                                        </svg></div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="popular__grid-item">
+                        <article class="article is-hidden-only-mobile">
+                            <div class="article__image">
+                                <img class="article__image-img" src="/img/new-2.png" alt="noticia4">
+                            </div>
+                            <h4 class="article__title">
+                                La importancia del ejercicio físico: Mejora tu salud y bienestar
+                            </h4>
+                            <p class="article__text">
+                                Descubre por qué el ejercicio físico es esencial para mantener una vida saludable y equilibrada. En este artículo, exploraremos los beneficios del ejercicio regular, mejorar la condición cardiovascular. 
+                            </p>
+                            <div class="article__footer">
+
+                                <div class="article__footer-info">
+                                    <div class="article__footer-author">Samatha Leuthex</div>
+                                    <div class="article__footer-date">May 5, 3 min read</div>
+                                </div>
+
+                                <div class="article__footer-actions">
+                                    <div class="article__footer-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M5 2H19C19.5523 2 20 2.44772 20 3V22.1433C20 22.4194 19.7761 22.6434 19.5 22.6434C19.4061 22.6434 19.314 22.6168 19.2344 22.5669L12 18.0313L4.76559 22.5669C4.53163 22.7136 4.22306 22.6429 4.07637 22.4089C4.02647 22.3293 4 22.2373 4 22.1433V3C4 2.44772 4.44772 2 5 2Z">
+                                            </path>
+                                        </svg></div>
+                                    <div class="article__footer-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M13.5759 17.2714L8.46576 14.484C7.83312 15.112 6.96187 15.5 6 15.5C4.067 15.5 2.5 13.933 2.5 12C2.5 10.067 4.067 8.5 6 8.5C6.96181 8.5 7.83301 8.88796 8.46564 9.51593L13.5759 6.72855C13.5262 6.49354 13.5 6.24983 13.5 6C13.5 4.067 15.067 2.5 17 2.5C18.933 2.5 20.5 4.067 20.5 6C20.5 7.933 18.933 9.5 17 9.5C16.0381 9.5 15.1669 9.11201 14.5343 8.48399L9.42404 11.2713C9.47382 11.5064 9.5 11.7501 9.5 12C9.5 12.2498 9.47383 12.4935 9.42408 12.7285L14.5343 15.516C15.167 14.888 16.0382 14.5 17 14.5C18.933 14.5 20.5 16.067 20.5 18C20.5 19.933 18.933 21.5 17 21.5C15.067 21.5 13.5 19.933 13.5 18C13.5 17.7502 13.5262 17.5064 13.5759 17.2714Z">
+                                            </path>
+                                        </svg></div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    
+                </section>
+                <div class="see-popular-article">
+                    <h3>VER ARTICULOS POPULARES</h3>
+                </div>
+
+                <section class="popular">
+                    <div class="article is-hidden-only-mobile">
+                        <h3 class="popular__title">TODOS LOS ARTICULOS</h3>
+                    </div>
+                    <section class="popular__grid">
+                        <div class="popular__grid-item">
+                            <article class="article article--is-second">
+                                <div class="article__image">
+                                    <img class="imagen" src="img/new-6.png" alt="noticia5">
+                                </div>
+                                <div class="article__main">
+                                    <h4 class="article__title">
+                                        10 consejos para una alimentación saludable
+                                    </h4>
+                                    <p class="article__texto">
+                                        Descubre consejos prácticos y fáciles de seguir para mejorar tu alimentación y mantener un estilo de vida saludable.
+                                    </p>
+                                    <div class="article__footer">
+    
+                                        <div class="article__footer-info">
+                                            <div class="article__footer-author">Samatha Leuthex</div>
+                                            <div class="article__footer-date">May 5, 3 min read</div>
+                                        </div>
+                                        
+                                        <div class="article__footer-actions">
+                                            <div class="article__footer-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 24 24">
+                                                    <path
+                                                        d="M5 2H19C19.5523 2 20 2.44772 20 3V22.1433C20 22.4194 19.7761 22.6434 19.5 22.6434C19.4061 22.6434 19.314 22.6168 19.2344 22.5669L12 18.0313L4.76559 22.5669C4.53163 22.7136 4.22306 22.6429 4.07637 22.4089C4.02647 22.3293 4 22.2373 4 22.1433V3C4 2.44772 4.44772 2 5 2Z">
+                                                    </path>
+                                                </svg></div>
+                                            <div class="article__footer-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 24 24">
+                                                    <path
+                                                        d="M13.5759 17.2714L8.46576 14.484C7.83312 15.112 6.96187 15.5 6 15.5C4.067 15.5 2.5 13.933 2.5 12C2.5 10.067 4.067 8.5 6 8.5C6.96181 8.5 7.83301 8.88796 8.46564 9.51593L13.5759 6.72855C13.5262 6.49354 13.5 6.24983 13.5 6C13.5 4.067 15.067 2.5 17 2.5C18.933 2.5 20.5 4.067 20.5 6C20.5 7.933 18.933 9.5 17 9.5C16.0381 9.5 15.1669 9.11201 14.5343 8.48399L9.42404 11.2713C9.47382 11.5064 9.5 11.7501 9.5 12C9.5 12.2498 9.47383 12.4935 9.42408 12.7285L14.5343 15.516C15.167 14.888 16.0382 14.5 17 14.5C18.933 14.5 20.5 16.067 20.5 18C20.5 19.933 18.933 21.5 17 21.5C15.067 21.5 13.5 19.933 13.5 18C13.5 17.7502 13.5262 17.5064 13.5759 17.2714Z">
+                                                    </path>
+                                                </svg></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="article article--is-second">
+                                <div class="article__image">
+                                    <img class="imagen" src="img/new-6.png" alt="noticia6">
+                                </div>
+                                <div class="article__main">
+                                    <h4 class="article__title">
+                                        Los mejores destinos para unas vacaciones en la playa
+                                    </h4>
+                                    <p class="article__texto">
+                                        Explora increíbles destinos de playa alrededor del mundo y comienza a planificar tus próximas vacaciones paradisíacas.
+                                    <div class="article__footer">
+    
+                                        <div class="article__footer-info">
+                                            <div class="article__footer-author">Samatha Leuthex</div>
+                                            <div class="article__footer-date">May 5, 3 min read</div>
+                                        </div>
+                                        
+                                        <div class="article__footer-actions">
+                                            <div class="article__footer-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 24 24">
+                                                    <path
+                                                        d="M5 2H19C19.5523 2 20 2.44772 20 3V22.1433C20 22.4194 19.7761 22.6434 19.5 22.6434C19.4061 22.6434 19.314 22.6168 19.2344 22.5669L12 18.0313L4.76559 22.5669C4.53163 22.7136 4.22306 22.6429 4.07637 22.4089C4.02647 22.3293 4 22.2373 4 22.1433V3C4 2.44772 4.44772 2 5 2Z">
+                                                    </path>
+                                                </svg></div>
+                                            <div class="article__footer-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 24 24">
+                                                    <path
+                                                        d="M13.5759 17.2714L8.46576 14.484C7.83312 15.112 6.96187 15.5 6 15.5C4.067 15.5 2.5 13.933 2.5 12C2.5 10.067 4.067 8.5 6 8.5C6.96181 8.5 7.83301 8.88796 8.46564 9.51593L13.5759 6.72855C13.5262 6.49354 13.5 6.24983 13.5 6C13.5 4.067 15.067 2.5 17 2.5C18.933 2.5 20.5 4.067 20.5 6C20.5 7.933 18.933 9.5 17 9.5C16.0381 9.5 15.1669 9.11201 14.5343 8.48399L9.42404 11.2713C9.47382 11.5064 9.5 11.7501 9.5 12C9.5 12.2498 9.47383 12.4935 9.42408 12.7285L14.5343 15.516C15.167 14.888 16.0382 14.5 17 14.5C18.933 14.5 20.5 16.067 20.5 18C20.5 19.933 18.933 21.5 17 21.5C15.067 21.5 13.5 19.933 13.5 18C13.5 17.7502 13.5262 17.5064 13.5759 17.2714Z">
+                                                    </path>
+                                                </svg></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+    
+                            <div class="is-hidden-only-mobile"><article class="article--is-second">
+                                <div class="article__image">
+                                    <img class="imagen" src="img/new-6.png" alt="noticia7">
+                                </div>
+                                <div class="article__main">
+                                    <h4 class="article__title">
+                                        Consejos para mejorar tu productividad en el trabajo
+                                    </h4>
+                                    <p class="article__texto">
+                                        Aprende técnicas efectivas para aumentar tu productividad y lograr un mejor equilibrio entre el trabajo y la vida personal.
+                                    </p>
+                                    <div class="article__footer">
+    
+                                        <div class="article__footer-info">
+                                            <div class="article__footer-author">Samatha Leuthex</div>
+                                            <div class="article__footer-date">May 5, 3 min read</div>
+                                        </div>
+                                        
+                                        <div class="article__footer-actions">
+                                            <div class="article__footer-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 24 24">
+                                                    <path
+                                                        d="M5 2H19C19.5523 2 20 2.44772 20 3V22.1433C20 22.4194 19.7761 22.6434 19.5 22.6434C19.4061 22.6434 19.314 22.6168 19.2344 22.5669L12 18.0313L4.76559 22.5669C4.53163 22.7136 4.22306 22.6429 4.07637 22.4089C4.02647 22.3293 4 22.2373 4 22.1433V3C4 2.44772 4.44772 2 5 2Z">
+                                                    </path>
+                                                </svg></div>
+                                            <div class="article__footer-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 24 24">
+                                                    <path
+                                                        d="M13.5759 17.2714L8.46576 14.484C7.83312 15.112 6.96187 15.5 6 15.5C4.067 15.5 2.5 13.933 2.5 12C2.5 10.067 4.067 8.5 6 8.5C6.96181 8.5 7.83301 8.88796 8.46564 9.51593L13.5759 6.72855C13.5262 6.49354 13.5 6.24983 13.5 6C13.5 4.067 15.067 2.5 17 2.5C18.933 2.5 20.5 4.067 20.5 6C20.5 7.933 18.933 9.5 17 9.5C16.0381 9.5 15.1669 9.11201 14.5343 8.48399L9.42404 11.2713C9.47382 11.5064 9.5 11.7501 9.5 12C9.5 12.2498 9.47383 12.4935 9.42408 12.7285L14.5343 15.516C15.167 14.888 16.0382 14.5 17 14.5C18.933 14.5 20.5 16.067 20.5 18C20.5 19.933 18.933 21.5 17 21.5C15.067 21.5 13.5 19.933 13.5 18C13.5 17.7502 13.5262 17.5064 13.5759 17.2714Z">
+                                                    </path>
+                                                </svg></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article></div>
+    
+                            <div class="is-hidden-only-mobile"><article class="article--is-second">
+                                <div class="article__image">
+                                    <img class="imagen" src="img/new-6.png" alt="noticia8">
+                                </div>
+                                <div class="article__main">
+                                    <h4 class="article__title">
+                                        Los beneficios de la actividad física regular
+                                    </h4>
+                                    <p class="article__texto">
+                                        Descubre los numerosos beneficios que aporta la actividad física regular a tu salud física y mental para mejorar tu rutina diaria.
+                                    </p>
+                                    <div class="article__footer">
+    
+                                        <div class="article__footer-info">
+                                            <div class="article__footer-author">Samatha Leuthex</div>
+                                            <div class="article__footer-date">May 5, 3 min read</div>
+                                        </div>
+                                        
+                                        <div class="article__footer-actions">
+                                            <div class="article__footer-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 24 24">
+                                                    <path
+                                                        d="M5 2H19C19.5523 2 20 2.44772 20 3V22.1433C20 22.4194 19.7761 22.6434 19.5 22.6434C19.4061 22.6434 19.314 22.6168 19.2344 22.5669L12 18.0313L4.76559 22.5669C4.53163 22.7136 4.22306 22.6429 4.07637 22.4089C4.02647 22.3293 4 22.2373 4 22.1433V3C4 2.44772 4.44772 2 5 2Z">
+                                                    </path>
+                                                </svg></div>
+                                            <div class="article__footer-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 24 24">
+                                                    <path
+                                                        d="M13.5759 17.2714L8.46576 14.484C7.83312 15.112 6.96187 15.5 6 15.5C4.067 15.5 2.5 13.933 2.5 12C2.5 10.067 4.067 8.5 6 8.5C6.96181 8.5 7.83301 8.88796 8.46564 9.51593L13.5759 6.72855C13.5262 6.49354 13.5 6.24983 13.5 6C13.5 4.067 15.067 2.5 17 2.5C18.933 2.5 20.5 4.067 20.5 6C20.5 7.933 18.933 9.5 17 9.5C16.0381 9.5 15.1669 9.11201 14.5343 8.48399L9.42404 11.2713C9.47382 11.5064 9.5 11.7501 9.5 12C9.5 12.2498 9.47383 12.4935 9.42408 12.7285L14.5343 15.516C15.167 14.888 16.0382 14.5 17 14.5C18.933 14.5 20.5 16.067 20.5 18C20.5 19.933 18.933 21.5 17 21.5C15.067 21.5 13.5 19.933 13.5 18C13.5 17.7502 13.5262 17.5064 13.5759 17.2714Z">
+                                                    </path>
+                                                </svg></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article></div>
+    
+                            <div class="is-hidden-only-mobile"><article class="article--is-second">
+                                <div class="article__image">
+                                    <img class="imagen" src="img/new-6.png" alt="noticia9">
+                                </div>
+                                <div class="article__main">
+                                    <h4 class="article__title">
+                                        Consejos para decorar tu hogar con estilo
+                                    </h4>
+                                    <p class="article__texto">
+                                        Obtén ideas y consejos de decoración para transformar tu hogar y crear un ambiente acogedor y con estilo renovador.
+                                    </p>
+                                    <div class="article__footer">
+    
+                                        <div class="article__footer-info">
+                                            <div class="article__footer-author">Samatha Leuthex</div>
+                                            <div class="article__footer-date">May 5, 3 min read</div>
+                                        </div>
+                                        
+                                        <div class="article__footer-actions">
+                                            <div class="article__footer-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 24 24">
+                                                    <path
+                                                        d="M5 2H19C19.5523 2 20 2.44772 20 3V22.1433C20 22.4194 19.7761 22.6434 19.5 22.6434C19.4061 22.6434 19.314 22.6168 19.2344 22.5669L12 18.0313L4.76559 22.5669C4.53163 22.7136 4.22306 22.6429 4.07637 22.4089C4.02647 22.3293 4 22.2373 4 22.1433V3C4 2.44772 4.44772 2 5 2Z">
+                                                    </path>
+                                                </svg></div>
+                                            <div class="article__footer-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 24 24">
+                                                    <path
+                                                        d="M13.5759 17.2714L8.46576 14.484C7.83312 15.112 6.96187 15.5 6 15.5C4.067 15.5 2.5 13.933 2.5 12C2.5 10.067 4.067 8.5 6 8.5C6.96181 8.5 7.83301 8.88796 8.46564 9.51593L13.5759 6.72855C13.5262 6.49354 13.5 6.24983 13.5 6C13.5 4.067 15.067 2.5 17 2.5C18.933 2.5 20.5 4.067 20.5 6C20.5 7.933 18.933 9.5 17 9.5C16.0381 9.5 15.1669 9.11201 14.5343 8.48399L9.42404 11.2713C9.47382 11.5064 9.5 11.7501 9.5 12C9.5 12.2498 9.47383 12.4935 9.42408 12.7285L14.5343 15.516C15.167 14.888 16.0382 14.5 17 14.5C18.933 14.5 20.5 16.067 20.5 18C20.5 19.933 18.933 21.5 17 21.5C15.067 21.5 13.5 19.933 13.5 18C13.5 17.7502 13.5262 17.5064 13.5759 17.2714Z">
+                                                    </path>
+                                                </svg></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article></div>
+                        </div>
+                    </section>
+                </section>
+            </section>
+
+            <section class="parte__text-arrow">
+                <div class="is-hidden-only-mobile">
+                    <div class="text-arrow">
+                        <img class="arrow-left" src="img/arrow-left.png">
+                        Anterior Post
+                    </div>
+                </div>
+                <div class="text-arrow">
+                    Nuevo post
+                    <div class="is-hidden-only-mobile">
+                        <img class="arrow-right" src="img/arrow-right.png">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="layout__footer">
+        <section class="footer">
+            <div class="container">
+                <div class="footer-lets-talk">
+                    <div class="footer-lets-talk__texts">
+                        <h4 class="footer-lets-talk__title">¿Interesado en nuestro equipo?</h4>
+                        <div class="footer-lets-talk__text">Únete a nosotros y sé parte de un equipo innovador que marca la diferencia. ¡No dejes pasar esta oportunidad única! Haz clic aquí para enviar tu solicitud y comienza una nueva etapa en tu carrera con nosotros. 
+                            ¡Esperamos conocerte y trabajar juntos para lograr grandes cosas!
+                        </div>
+                    </div>
+                    <div class="footer-lets-talk__actions">
+                        <button class="footer-lets-talk__button">Únete!</button>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <section class="container">
+                <div class="footer-second">
+                    <div class="colum1">
+                        <img src="img/LOGOS.png">
+                        <p class="footer__info">
+                            <p class="texto-colum1"><b>A.</b> 1234 Calle Principal, Ciudad Imaginaria, País de las Maravillas</p>
+                            <p class="texto-colum1"><b>T.</b> +62-812-7313-4321</p>
+                            <P class="texto-colum1"><b>E.</b> hello.afrian@gmail.com</P>
+                        </p>
+                    </div>
+            
+                    <div class="colum2">
+                        <p class="footer__info">
+                            <span>About us</span>
+                            <a class="opciones" href="">About</a>
+                            <a class="opciones" href="">What We Do</a>
+                            <a class="opciones" href="">Project</a>
+                            <a class="opciones" href="">How It Work With Us</a>
+                        </p>
+                    </div>
+                    <div class="colum3">
+                        <p class="footer__info">
+                            <span>Follow us</span>
+                            <a class="opciones" href="">Instagram</a>
+                            <a class="opciones" href="">Facebook</a>
+                            <a class="opciones" href="">Linkedlin</a>
+                            <a class="opciones" href="">YouTube</a>
+                        </p>
+                    </div>
+                </div>
+
+            </section>
+
+            <div class="container">
+                <div class="footer-third">
+                    <h5>2023 &copy; BlogNoticias. All rights reserved.</h5>
+                </div>
+            </div>
+        </section>
+        
+    </footer>
+</body>
+
+</html>

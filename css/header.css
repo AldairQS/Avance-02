@@ -1,0 +1,29 @@
+/*
+* header
+* ==========================================================
+*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 0 31px; */
+  padding-left: 31px;
+  padding-right: 31px;
+}
+  
+.header__nav-item {
+  color: #000000;
+  text-decoration: none;
+}
+  
+  /*
+  * Este código hace que el primer elemento no tenga el margin-left de 25px
+  */
+.header__nav-item:not(:nth-child(1)) {
+  margin-left: 25px;
+}
+  
+.header__nav-item--active {
+  color: #1f3f68;
+  font-weight: 700;
+}

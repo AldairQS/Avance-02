@@ -1,0 +1,154 @@
+/*
+* footer
+* ==========================================================
+*/
+.footer {
+  background: #316099;
+  color: white;
+}
+
+/*
+* footer-lets-talk
+* ==========================================================
+*/
+.footer-lets-talk {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+}
+
+.footer-lets-talk__texts {
+  flex-shrink: 5;
+  flex-basis: 50%;
+}
+
+.footer-lets-talk__title {
+  font-weight: 400;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.footer-lets-talk__text {
+  margin-bottom: 20px;
+}
+
+.footer-lets-talk__actions {
+  flex-grow: 1;
+  flex-basis: 50%;
+}
+
+.footer-lets-talk__button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background: #5a98d0;
+  border: none;
+  color: inherit; /* Por defecto el boton no hereda el color*/
+}
+
+@media screen and (min-width: 768px) {
+  .footer-lets-talk {
+    flex-direction: row;
+  }
+
+  .footer-lets-talk__button {
+    width: 140px;
+  }
+
+  .footer-lets-talk__actions {
+    /* CENTRAR */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media  screen and (min-width: 1200px) {
+    .footer-lets-talk__button {
+        width: 220px;
+      }
+    .footer-lets-talk__actions {
+        justify-content: flex-end;
+      }
+}
+
+hr{
+  color: white;
+  opacity: 0.4;
+}
+
+.footer-second {
+  background-color: #316099;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding-top: 70px;
+}
+
+.footer-second .colum1, .footer-second .colum2, .footer-second .colum3{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer-second .footer__info {
+  line-height: 20px;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-second .footer__info span {
+  display: block;
+  color: #ffffff;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.colum1{
+  width: 50%;
+}
+.texto-colum1{
+  font-family: 'Arial';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  display: inline-block;
+  color: white;
+  margin: 20px 0;
+  display: block;
+}
+.colum2{
+  width: 20%;
+}
+
+.colum3{
+  width: 20%;
+}
+.opciones{
+  font-family: 'Arial';
+  text-decoration: none;
+  color: white;
+  display: block;
+  margin: 20px 0;
+  font-size: 16px;
+}
+
+
+@media (max-width: 890px) {
+  .footer-second .colum1, .footer-second .colum2, .footer-second .colum3{
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+  }
+}
+
+
+.footer-third h5{
+  font-family: 'Arial';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  opacity: 0.4;
+  padding: 30px 0;
+}

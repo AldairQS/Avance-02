@@ -1,0 +1,23 @@
+.hero {
+  background-image: url("./../img/banner.png");
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  padding: 0 12px;
+}
+
+.hero h1{
+  color: white;
+  font-size: 44px;
+  font-weight: 400;
+  text-align: center;
+  padding: 38px 0;
+}
+
+.hero p{
+  color: white;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}

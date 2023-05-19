@@ -1,0 +1,12 @@
+
+/* Esto oculta cualqueir elemento solamente en mobile */
+.is-hidden-only-mobile {
+    display: none;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .is-hidden-only-mobile {
+      display: initial!important;
+    }
+  }
+  

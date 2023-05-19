@@ -1,0 +1,11 @@
+.search{
+    background: #F4F4F4;
+    padding: 15px 25px;
+    border-radius: 10px;
+    display: flex;
+    margin-top: 56px;
+    margin-bottom: 56px;
+    color: #1F3F68;
+    gap: 20px;
+    align-items: center;
+}
